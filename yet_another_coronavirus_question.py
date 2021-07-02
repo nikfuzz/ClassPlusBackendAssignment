@@ -16,8 +16,10 @@ class Graph:
                     if self.graph[i][k] + self.graph[k][j] < self.graph[i][j]:
                         self.graph[i][j] = self.graph[i][k] + self.graph[k][j]
 
+# standard input
 n, h, x = map(int, input().split())
 
+# initialize graph
 gr = Graph(n)
 
 hotspots = [int(x) for x in input().split()]
